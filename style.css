@@ -85,13 +85,19 @@ p {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.65rem;
   font-weight: 800;
-  gap: 10px;
+  gap: 12px;
 }
 
-.brand svg {
-  fill: currentColor;
-  height: 30px;
-  width: 30px;
+.brand-logo {
+  height: 54px;
+  object-fit: contain;
+  width: 46px;
+}
+
+.footer-logo {
+  height: 46px;
+  object-fit: contain;
+  width: 40px;
 }
 
 .nav-links {
@@ -194,7 +200,8 @@ p {
 }
 
 .page-hero h1 {
-  font-size: clamp(4rem, 8vw, 6.5rem);
+  font-size: clamp(3rem, 6vw, 5.25rem);
+  max-width: min(100%, 900px);
 }
 
 .hero p:not(.eyebrow) {
@@ -792,6 +799,11 @@ textarea:focus {
     width: 100%;
   }
 
+  .brand-logo {
+    height: 48px;
+    width: 42px;
+  }
+
   .stats-grid,
   .card-grid.three,
   .testimonial-grid,
@@ -833,7 +845,7 @@ textarea:focus {
 
   .hero h1,
   .page-hero h1 {
-    font-size: clamp(3rem, 15vw, 4.8rem);
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
   }
 
   .section {
@@ -860,5 +872,424 @@ textarea:focus {
 
   .custom-amount div {
     flex-direction: column;
+  }
+}
+
+
+.home-intro-section { background: var(--lightest); }
+.home-intro { max-width: 940px; }
+.home-intro h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+.home-intro p:not(.eyebrow) { font-size: 1.15rem; margin-top: 22px; max-width: 820px; }
+.card-grid.four, .process-grid { display: grid; gap: 22px; grid-template-columns: repeat(4, 1fr); }
+.home-program-grid .info-card { min-height: 260px; }
+.story-strip .mural-tile span { font-size: 1.45rem; }
+.process-section { background: var(--light); }
+.process-step { background: var(--white); border: 1px solid var(--mid); border-radius: var(--radius); padding: 28px; transition: transform .2s ease, border-color .2s ease; }
+.process-step:hover { border-color: var(--deep); transform: translateY(-4px); }
+.process-step span { color: var(--mid-dark); display: block; font-weight: 900; margin-bottom: 16px; }
+.process-step h3 { font-size: 1.55rem; }
+.process-step p { margin-top: 12px; }
+.partner-callout-section { background: var(--lightest); }
+.partner-callout { align-items: center; background: var(--white); border: 1px solid var(--mid); border-radius: var(--radius); display: grid; gap: 32px; grid-template-columns: 1.35fr .65fr; padding: 38px; }
+.partner-callout h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.partner-callout p:not(.eyebrow) { margin-top: 18px; }
+.partner-actions { display: grid; gap: 12px; }
+@media (max-width: 980px) { .card-grid.four, .process-grid, .partner-callout { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) { .card-grid.four, .process-grid, .partner-callout { grid-template-columns: 1fr; } .partner-callout { padding: 26px; } }
+
+
+.page-intro-section { background: var(--lightest); }
+.page-intro-grid { align-items: start; display: grid; gap: 40px; grid-template-columns: 1.25fr .75fr; }
+.number-panel { background: var(--white); border: 1px solid var(--mid); border-radius: var(--radius); display: grid; gap: 10px; padding: 28px; }
+.number-panel span { color: var(--deep); font-family: "Playfair Display", Georgia, serif; font-size: 2.8rem; font-weight: 800; line-height: 1; }
+.number-panel h3 { font-size: 1.35rem; }
+.number-panel p { margin-bottom: 14px; }
+.photo-feature-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+.photo-feature-grid img { aspect-ratio: 4 / 3; border-radius: var(--radius); height: 100%; width: 100%; }
+@media (max-width: 980px) { .page-intro-grid, .photo-feature-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) { .page-intro-grid, .photo-feature-grid { grid-template-columns: 1fr; } }
+
+
+.home-hero {
+  min-height: 720px;
+}
+
+.home-hero > img {
+  object-position: center center;
+}
+
+.home-hero .hero-content {
+  left: 50%;
+  max-width: 1040px;
+  padding: 40px 0;
+  top: 52%;
+  width: min(1040px, calc(100% - 56px));
+}
+
+.home-hero h1 {
+  font-size: clamp(3.6rem, 6.5vw, 6.4rem);
+  line-height: 1.03;
+  max-width: 900px;
+  overflow-wrap: normal;
+}
+
+.home-hero p:not(.eyebrow) {
+  max-width: 760px;
+}
+
+@media (max-width: 980px) {
+  .home-hero {
+    min-height: 680px;
+  }
+
+  .home-hero .hero-content {
+    top: 52%;
+    width: min(100% - 40px, 760px);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 680px) {
+  .home-hero {
+    min-height: 660px;
+  }
+
+  .home-hero .hero-content {
+    top: 50%;
+    width: min(100% - 28px, 520px);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.15rem);
+    max-width: 100%;
+  }
+
+  .home-hero p:not(.eyebrow) {
+    font-size: 1.02rem;
+  }
+}
+
+
+/* Home hero alignment fix */
+.home-hero .hero-content {
+  max-width: 820px;
+  width: min(820px, calc(100% - 56px));
+}
+
+.home-hero h1 {
+  font-size: clamp(3.2rem, 5.5vw, 5.7rem);
+  line-height: .98;
+  max-width: 820px;
+}
+
+.home-hero p:not(.eyebrow) {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  max-width: 720px;
+}
+
+@media (max-width: 680px) {
+  .home-hero .hero-content {
+    width: min(100% - 28px, 460px);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.7rem, 12vw, 3.8rem);
+  }
+}
+
+
+/* Home hero vertical fit fix */
+.home-hero {
+  min-height: calc(100vh - 76px);
+}
+
+.home-hero .hero-content {
+  top: 46%;
+  transform: translate(-50%, -46%);
+}
+
+.home-hero h1 {
+  font-size: clamp(3rem, 4.8vw, 5rem);
+  line-height: .98;
+  margin: 0;
+}
+
+.home-hero p:not(.eyebrow) {
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  line-height: 1.45;
+  margin-top: 20px;
+  max-width: 680px;
+}
+
+.home-hero .hero-actions {
+  margin-top: 24px;
+}
+
+@media (max-width: 980px) {
+  .home-hero .hero-content {
+    top: 48%;
+    transform: translate(-50%, -48%);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.8rem, 8vw, 4.6rem);
+  }
+}
+
+@media (max-width: 680px) {
+  .home-hero .hero-content {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3.45rem);
+  }
+}
+
+
+/* Refined navigation and hero title */
+.site-header {
+  border-bottom: 1px solid var(--mid);
+}
+
+.navbar {
+  min-height: 92px;
+  padding: 0 48px;
+}
+
+.brand {
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.brand-logo {
+  height: 64px;
+  width: 56px;
+}
+
+.nav-links {
+  gap: 14px;
+}
+
+.nav-links a {
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 12px 18px;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.nav-links .nav-donate {
+  background: var(--lightest);
+  color: var(--deep);
+}
+
+.cart-link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.home-hero h1 {
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-size: clamp(3rem, 5vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  max-width: 1120px;
+  white-space: nowrap;
+}
+
+.home-hero .hero-content {
+  max-width: 1120px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1120px, calc(100% - 80px));
+}
+
+.home-hero .hero-actions {
+  margin-top: 34px;
+}
+
+@media (max-width: 980px) {
+  .navbar {
+    min-height: 82px;
+    padding: 0 22px;
+  }
+
+  .nav-links {
+    top: 82px;
+  }
+
+  .brand-logo {
+    height: 54px;
+    width: 48px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.8rem, 8vw, 4.8rem);
+    white-space: normal;
+  }
+
+  .home-hero .hero-content {
+    width: min(100% - 40px, 760px);
+  }
+}
+
+@media (max-width: 680px) {
+  .home-hero h1 {
+    font-size: clamp(2.45rem, 11vw, 3.6rem);
+  }
+}
+
+
+/* Official I Leaf Art wordmark */
+.brand {
+  background: var(--lightest);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+}
+
+.brand-wordmark {
+  display: block;
+  height: 58px;
+  object-fit: contain;
+  width: 210px;
+}
+
+.footer-brand {
+  background: var(--lightest);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  width: fit-content;
+}
+
+.footer-wordmark {
+  display: block;
+  height: 44px;
+  object-fit: contain;
+  width: 160px;
+}
+
+@media (max-width: 980px) {
+  .brand-wordmark {
+    height: 50px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 680px) {
+  .brand {
+    padding: 7px 10px;
+  }
+
+  .brand-wordmark {
+    height: 42px;
+    width: 152px;
+  }
+}
+
+
+/* Page hero alignment and animation repair */
+.page-hero .container,
+.page-hero .container.reveal,
+.page-hero .container.reveal.is-visible {
+  left: 46%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1080px, calc(100% - 80px));
+}
+
+.page-hero h1 {
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-size: clamp(3rem, 5vw, 4.9rem);
+  font-weight: 800;
+  line-height: 1.08;
+  max-width: 820px;
+  white-space: normal;
+}
+
+.page-hero .eyebrow {
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+}
+
+.home-hero .hero-content,
+.home-hero .hero-content.reveal,
+.home-hero .hero-content.reveal.is-visible {
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.home-hero .hero-content.reveal {
+  opacity: 1;
+}
+
+.home-hero .hero-content .eyebrow,
+.home-hero .hero-content h1,
+.home-hero .hero-content .hero-actions {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.home-hero .hero-content.is-visible .eyebrow {
+  animation: heroFadeUp .65s ease forwards;
+}
+
+.home-hero .hero-content.is-visible h1 {
+  animation: heroFadeUp .75s ease .12s forwards;
+}
+
+.home-hero .hero-content.is-visible .hero-actions {
+  animation: heroFadeUp .75s ease .24s forwards;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .page-hero .container,
+  .page-hero .container.reveal,
+  .page-hero .container.reveal.is-visible,
+  .home-hero .hero-content,
+  .home-hero .hero-content.reveal,
+  .home-hero .hero-content.reveal.is-visible {
+    left: 50%;
+    width: min(100% - 40px, 760px);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.8rem, 8vw, 4.4rem);
+  }
+}
+
+@media (max-width: 680px) {
+  .page-hero .container,
+  .page-hero .container.reveal,
+  .page-hero .container.reveal.is-visible,
+  .home-hero .hero-content,
+  .home-hero .hero-content.reveal,
+  .home-hero .hero-content.reveal.is-visible {
+    width: min(100% - 28px, 520px);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.45rem, 11vw, 3.55rem);
   }
 }
