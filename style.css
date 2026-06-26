@@ -22,7 +22,7 @@ body {
   margin: 0;
   background: var(--lightest);
   color: var(--charcoal);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.6;
 }
 
@@ -48,7 +48,7 @@ h1,
 h2,
 h3 {
   color: var(--dark);
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.02;
   margin: 0;
 }
@@ -82,7 +82,7 @@ p {
 .footer-brand {
   align-items: center;
   display: inline-flex;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.65rem;
   font-weight: 800;
   gap: 12px;
@@ -401,7 +401,7 @@ p {
   background: var(--deep);
   bottom: 18px;
   color: var(--white);
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.6rem;
   font-weight: 800;
   left: 18px;
@@ -580,7 +580,7 @@ p {
 .donation-card span {
   color: var(--deep);
   display: block;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 3.4rem;
   font-weight: 800;
   margin-bottom: 10px;
@@ -901,7 +901,7 @@ textarea:focus {
 .page-intro-section { background: var(--lightest); }
 .page-intro-grid { align-items: start; display: grid; gap: 40px; grid-template-columns: 1.25fr .75fr; }
 .number-panel { background: var(--white); border: 1px solid var(--mid); border-radius: var(--radius); display: grid; gap: 10px; padding: 28px; }
-.number-panel span { color: var(--deep); font-family: "Playfair Display", Georgia, serif; font-size: 2.8rem; font-weight: 800; line-height: 1; }
+.number-panel span { color: var(--deep); font-family: "Times New Roman", Times, serif; font-size: 2.8rem; font-weight: 800; line-height: 1; }
 .number-panel h3 { font-size: 1.35rem; }
 .number-panel p { margin-bottom: 14px; }
 .photo-feature-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
@@ -1063,7 +1063,7 @@ textarea:focus {
 }
 
 .brand {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.55rem;
   font-weight: 800;
 }
@@ -1078,7 +1078,7 @@ textarea:focus {
 }
 
 .nav-links a {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
   font-weight: 700;
   padding: 12px 18px;
@@ -1100,7 +1100,7 @@ textarea:focus {
 }
 
 .home-hero h1 {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(3rem, 5vw, 5.4rem);
   font-weight: 800;
   line-height: 1.05;
@@ -1210,7 +1210,7 @@ textarea:focus {
 }
 
 .page-hero h1 {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(3rem, 5vw, 4.9rem);
   font-weight: 800;
   line-height: 1.08;
@@ -1219,7 +1219,7 @@ textarea:focus {
 }
 
 .page-hero .eyebrow {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .home-hero .hero-content,
