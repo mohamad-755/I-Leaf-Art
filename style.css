@@ -1356,13 +1356,15 @@ textarea:focus {
 
 /* Intro facts panel */
 .intro-facts {
-  display: grid;
-  gap: 4px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .intro-fact {
   border-left: 3px solid var(--mid);
-  padding: 14px 0 14px 20px;
+  padding: 16px 0 16px 20px;
   transition: border-color .2s ease;
 }
 
@@ -1383,6 +1385,15 @@ textarea:focus {
   color: var(--charcoal);
   font-size: 0.95rem;
   line-height: 1.55;
+  margin: 0;
+}
+
+.home-intro-section .split-layout {
+  align-items: start;
+}
+
+.home-intro-section .copy-block h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
 }
 
 /* Intro section heading size override */
