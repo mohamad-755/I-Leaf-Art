@@ -1384,3 +1384,8 @@ textarea:focus {
   font-size: 0.95rem;
   line-height: 1.55;
 }
+
+/* Intro section heading size override */
+.home-intro-section .copy-block h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
