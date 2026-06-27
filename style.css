@@ -1353,3 +1353,34 @@ textarea:focus {
     z-index: 1;
   }
 }
+
+/* Intro facts panel */
+.intro-facts {
+  display: grid;
+  gap: 4px;
+}
+
+.intro-fact {
+  border-left: 3px solid var(--mid);
+  padding: 14px 0 14px 20px;
+  transition: border-color .2s ease;
+}
+
+.intro-fact:hover {
+  border-left-color: var(--deep);
+}
+
+.intro-fact span {
+  color: var(--deep);
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.intro-fact p {
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
