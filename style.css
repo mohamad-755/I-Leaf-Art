@@ -1293,3 +1293,63 @@ textarea:focus {
     font-size: clamp(2.45rem, 11vw, 3.55rem);
   }
 }
+
+
+/* Impact band stat number */
+.stat-number {
+  color: var(--deep);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+/* Why murals pull quote */
+.pull-quote {
+  border-left: 4px solid var(--deep);
+  color: var(--deep);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+  margin: 24px 0;
+  padding: 0 0 0 20px;
+}
+
+/* Stories tile tag */
+.mural-tile .tile-tag {
+  background: var(--lightest);
+  bottom: auto;
+  color: var(--deep);
+  font-size: 0.72rem;
+  font-weight: 800;
+  left: 18px;
+  padding: 5px 10px;
+  position: absolute;
+  right: auto;
+  text-transform: uppercase;
+  top: 18px;
+}
+
+/* Process connector line */
+@media (min-width: 681px) {
+  .process-connected {
+    position: relative;
+  }
+
+  .process-connected::before {
+    border-top: 2px dashed var(--mid-dark);
+    content: "";
+    left: 10%;
+    position: absolute;
+    right: 10%;
+    top: 42px;
+    z-index: 0;
+  }
+
+  .process-connected .process-step {
+    position: relative;
+    z-index: 1;
+  }
+}
